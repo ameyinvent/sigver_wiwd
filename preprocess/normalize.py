@@ -67,7 +67,7 @@ def normalize_image(img, size=(840, 1360)):
         if r_start < 0:
             r_start = 0
 
-    # Case 2: image larger than required (width). Crop.
+    # Case 2: if image larger than required (width). Crop.
     if img_c > max_c:
         print ('Warning: cropping image. The signature should be smaller than the canvas size')
         c_start = 0
